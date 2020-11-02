@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  card_count: 1
+  deck_type: MyString
+  deck_color: MyString
+  public: false
+  format: MyString
+
+two:
+  name: MyString
+  card_count: 1
+  deck_type: MyString
+  deck_color: MyString
+  public: false
+  format: MyString
