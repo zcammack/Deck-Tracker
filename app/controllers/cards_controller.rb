@@ -33,5 +33,11 @@ class CardsController < ApplicationController
 
     end
 
-    
+    def set_card!
+        @card = Card.find(params[:id])
+    end
+
+    def card_params
+        params.require(:card).permit(:name, :effect, :cost, :color, :attack_value, :health_value, :type)
+    end
 end
