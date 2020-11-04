@@ -20,7 +20,7 @@ class PagesController < ApplicationController
       if card_hash["image_uris"]
         image_hash = {
           "image" => card_hash["image_uris"]["art_crop"],
-          "name" => card_hash["name"]
+          "name" => card_hash["name"],
           "artist" => card_hash["artist"]
         }
         images << image_hash
