@@ -1,5 +1,5 @@
 class DecksController < ApplicationController
-        before action :set_decks!, only: [:show, :edit, :update, :destroy]
+        before action :set_deck!, only: [:show, :edit, :update, :destroy]
     def new
         @deck = Deck.new
     end
@@ -40,7 +40,7 @@ class DecksController < ApplicationController
 
     private
 
-    def set_decks!
+    def set_deck!
         @deck = Deck.find(params[:id])
     end
 
