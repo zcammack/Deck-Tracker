@@ -1,6 +1,7 @@
 <h1>Welcome to the Deck-Tracker Library!</h1>
 <div class="card_container">
-    <%= render partial: '/pages/cards/card_image' %>
-    <%= render partial: '/pages/cards/card_image' %>
-    <%= render partial: '/pages/cards/card_image' %>
+    <%= render partial: '/pages/cards/card', locals: {img_hash: session[:images][0]} %>
+    <%= render partial: '/pages/cards/card', locals: {img_hash: session[:images][1]} %>
+    <%= render partial: '/pages/cards/card', locals: {img_hash: session[:images][2]} %>
+
 </div>
